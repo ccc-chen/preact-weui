@@ -1,0 +1,71 @@
+.page.js_show.dialog
+
+  .page__hd
+    h1.page__title Dialog       
+    p.page__desc 对话框
+
+  .page__bd.page__bd_spacing
+    a.weui-btn.weui-btn_default iOS Dialog样式一
+    a.weui-btn.weui-btn_default iOS Dialog样式二    
+    a.weui-btn.weui-btn_default Android Dialog样式一   
+    a.weui-btn.weui-btn_default Android Dialog样式二
+   
+  .page__ft
+    a
+      img(
+				src="./images/icon_footer_link.png"
+			)
+  #dialogs
+    .js_dialog(
+			style="display: none;"
+		)
+      .weui-mask         
+      .weui-dialog
+        .weui-dialog__hd
+          strong.weui-dialog__title 弹窗标题
+         
+        .weui-dialog__bd 弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内            
+        .weui-dialog__ft
+          a.weui-dialog__btn.weui-dialog__btn_default 辅助操作                  
+          a.weui-dialog__btn.weui-dialog__btn_primary 主操作
+    // END dialog1
+    // BEGIN dialog2
+    .js_dialog(
+			style="display: none;"
+		)
+      .weui-mask         
+      .weui-dialog
+
+        .weui-dialog__bd 弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内              
+        .weui-dialog__ft
+          a.weui-dialog__btn.weui-dialog__btn_primary 知道了
+    // END dialog2
+    // BEGIN dialog3
+    .js_dialog(
+			style="display: none;"
+		)
+
+      .weui-mask         
+      .weui-dialog.weui-skin_android
+        .weui-dialog__hd
+          strong.weui-dialog__title 弹窗标题
+                
+        .weui-dialog__bd
+          | 弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内  
+
+        .weui-dialog__ft
+          a.weui-dialog__btn.weui-dialog__btn_default 辅助操作                 
+          a.weui-dialog__btn.weui-dialog__btn_primary 主操作
+
+    .js_dialog(
+			style="display: none;"
+		)
+
+      .weui-mask          
+      .weui-dialog.weui-skin_android
+        .weui-dialog__bd
+          | 弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内  
+
+        .weui-dialog__ft
+          a.weui-dialog__btn.weui-dialog__btn_default(href="javascript:;") 辅助操作                   
+          a.weui-dialog__btn.weui-dialog__btn_primary(href="javascript:;") 主操作

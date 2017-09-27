@@ -1,0 +1,31 @@
+.page.js_show
+  .page__hd
+    h1.page__title Slider      
+    p.page__desc 滑块
+
+  .page__bd.page__bd_spacing
+
+    // slider 1  
+    .weui-slider
+      .weui-slider__inner
+      
+        .weui-slider__track(
+          style="width: 0;"
+        )               
+        .weui-slider__handler(
+          style="left: 0;"
+        )
+    br
+    // slider 2 
+    .weui-slider-box
+      .weui-slider
+
+        .weui-slider__inner
+          .weui-slider__track(
+            style="width: 50%;"
+          )         
+          .weui-slider__handler(
+            style="left: 50%;"
+          )
+           
+      .weui-slider-box__value 50

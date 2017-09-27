@@ -1,0 +1,38 @@
+.page.js_show.tabbar
+
+  .page__bd(
+		style="height: 100%;"
+	)
+    .weui-tab
+
+      .weui-tab__panel           
+      .weui-tabbar
+        a.weui-tabbar__item.weui-bar__item_on
+          span(
+						style="display: inline-block;position: relative;"
+					)
+
+            img.weui-tabbar__icon(src="../../../.././node_modules/weui/dist/example/images/icon_tabbar.png", alt="")                   
+            span.weui-badge(style="position: absolute;top: -2px;right: -13px;") 8
+                 
+          p.weui-tabbar__label 微信
+            
+        a.weui-tabbar__item
+          img.weui-tabbar__icon(src="../../../.././node_modules/weui/dist/example/images/icon_tabbar.png", alt="")                 
+          p.weui-tabbar__label 通讯录
+
+        a.weui-tabbar__item
+          span(
+						style="display: inline-block;position: relative;"
+					)
+
+            img.weui-tabbar__icon(src="../../../.././node_modules/weui/dist/example/images/icon_tabbar.png", alt="")                     
+            span.weui-badge.weui-badge_dot(
+							style="position: absolute;top: 0;right: -6px;"
+						)
+                 
+          p.weui-tabbar__label 发现
+             
+        a.weui-tabbar__item
+          img.weui-tabbar__icon(src="../../../.././node_modules/weui/dist/example/images/icon_tabbar.png", alt="")                
+          p.weui-tabbar__label 我

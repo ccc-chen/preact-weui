@@ -1,0 +1,58 @@
+.page.js_show
+
+  .page__hd
+    h1.page__title Uploader      
+    p.page__desc
+      | 上传组件，一般配合
+      a.link 组件Gallery
+      | 来使用。
+
+  .page__bd
+    .weui-gallery
+
+      span.weui-gallery__img          
+      .weui-gallery__opr
+        a.weui-gallery__del
+          i.weui-icon-delete.weui-icon_gallery-delete
+     
+    .weui-cells.weui-cells_form
+
+      .weui-cell
+        .weui-cell__bd
+          .weui-uploader
+            .weui-uploader__hd
+
+              p.weui-uploader__title 图片上传
+              |                             
+              .weui-uploader__info 0/2
+                         
+            .weui-uploader__bd
+              ul.weui-uploader__files
+
+                li.weui-uploader__file(
+                  style="background-image:url(../../../../node_modules/weui/dist/example/images/pic_160.png)"
+                )                               
+                li.weui-uploader__file(
+                  style="background-image:url(../../../../node_modules/weui/dist/example/images/pic_160.png)"
+                )                             
+                li.weui-uploader__file(
+                  style="background-image:url(../../../../node_modules/weui/dist/example/images/pic_160.png)"
+                )                            
+                li.weui-uploader__file.weui-uploader__file_status(
+                  style="background-image:url(../../../../node_modules/weui/dist/example/images/pic_160.png)"
+                )
+
+                  .weui-uploader__file-content
+                    i.weui-icon-warn
+                                           
+                li.weui-uploader__file.weui-uploader__file_status(
+                  style="background-image:url(../../../../node_modules/weui/dist/example/images/pic_160.png)"
+                  )
+                  .weui-uploader__file-content 50%
+                       
+              .weui-uploader__input-box
+                input.weui-uploader__input(
+                  type="file", accept="image/*", multiple=""
+                )
+  |     
+

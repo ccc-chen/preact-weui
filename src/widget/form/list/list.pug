@@ -1,102 +1,92 @@
 .page.js_show
+
   .page__hd
     h1.page__title List
-    |         
     p.page__desc 列表
-  |     
+
+  //Explanation
   .page__bd
-    .weui-cells__title 带说明的列表项
-    |         
+    .weui-cells__title 带说明的列表项  
     .weui-cells
+
       .weui-cell
         .weui-cell__bd
-          p 标题文字
-        |                 
+          p 标题文字               
         .weui-cell__ft 说明文字
-      |             
+         
       .weui-cell.weui-cell_swiped
-        .weui-cell__bd(style="transform: translateX(-68px)")
+        .weui-cell__bd(
+          style="transform: translateX(-68px)"
+        )
+
           .weui-cell
             .weui-cell__bd
-              p 标题文字
-            |                         
+              p 标题文字                       
             .weui-cell__ft 说明文字
-        |                 
+            
         .weui-cell__ft
-          a.weui-swiped-btn.weui-swiped-btn_warn(href="javascript:") 删除
-    |         
-    .weui-cells__title 带图标、说明的列表项
-    |         
+          a.weui-swiped-btn.weui-swiped-btn_warn 删除
+     
+    .weui-cells__title 带图标、说明的列表项    
     .weui-cells
+
       .weui-cell
         .weui-cell__hd
-          img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=", alt="", style="width:20px;margin-right:5px;display:block")
-        |                 
+          img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=", alt="", style="width:20px;margin-right:5px;display:block")              
         .weui-cell__bd
-          p 标题文字
-        |                 
+          p 标题文字     
         .weui-cell__ft 说明文字
-      |             
+          
       .weui-cell
         .weui-cell__hd
-          img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=", alt="", style="width:20px;margin-right:5px;display:block")
-        |                 
+          img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=", alt="", style="width:20px;margin-right:5px;display:block")            
         .weui-cell__bd
           p 标题文字
-        |                 
         .weui-cell__ft 说明文字
-    |         
-    .weui-cells__title 带跳转的列表项
-    |         
+     
+    .weui-cells__title 带跳转的列表项    
     .weui-cells
-      a.weui-cell.weui-cell_access(href="javascript:;")
+
+      a.weui-cell.weui-cell_access
         .weui-cell__bd
           p cell standard
-        |                 
+              
         .weui-cell__ft
-      |             
-      a.weui-cell.weui-cell_access(href="javascript:;")
+         
+      a.weui-cell.weui-cell_access
         .weui-cell__bd
           p cell standard
-        |                 
+             
         .weui-cell__ft
-    |         
+ 
     .weui-cells__title 带说明、跳转的列表项
-    |         
     .weui-cells
-      a.weui-cell.weui-cell_access(href="javascript:;")
+
+      a.weui-cell.weui-cell_access
         .weui-cell__bd
           p cell standard
-        |                 
         .weui-cell__ft 说明文字
-      |             
-      a.weui-cell.weui-cell_access(href="javascript:;")
+       
+      a.weui-cell.weui-cell_access
         .weui-cell__bd
-          p cell standard
-        |                 
+          p cell standard           
         .weui-cell__ft 说明文字
-    |         
-    .weui-cells__title 带图标、说明、跳转的列表项
-    |         
+     
+    .weui-cells__title 带图标、说明、跳转的列表项     
     .weui-cells
-      a.weui-cell.weui-cell_access(href="javascript:;")
+    
+      a.weui-cell.weui-cell_access
+
         .weui-cell__hd
-          img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=", alt="", style="width:20px;margin-right:5px;display:block")
-        |                 
+          img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=", alt="", style="width:20px;margin-right:5px;display:block")              
         .weui-cell__bd
-          p cell standard
-        |                 
+          p cell standard            
         .weui-cell__ft 说明文字
-      |             
-      a.weui-cell.weui-cell_access(href="javascript:;")
+        
+      a.weui-cell.weui-cell_access
+
         .weui-cell__hd
-          img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=", alt="", style="width:20px;margin-right:5px;display:block")
-        |                 
+          img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=", alt="", style="width:20px;margin-right:5px;display:block")               
         .weui-cell__bd
-          p cell standard
-        |                 
+          p cell standard              
         .weui-cell__ft 说明文字
-  |     
-  .page__ft
-    a(href="javascript:home()")
-      img(src="./images/icon_footer_link.png")

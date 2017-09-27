@@ -1,0 +1,41 @@
+.page.js_show
+
+  .page__hd
+    h1.page__title SearchBar     
+    p.page__desc 搜索栏
+
+  .page__bd
+    // <a href="javascript:;" class="weui-btn weui-btn_primary">点击展现searchBar</a>
+    .weui-search-bar
+      form.weui-search-bar__form
+
+        .weui-search-bar__box
+          i.weui-icon-search   
+          input#searchInput.weui-search-bar__input(
+						type="search", placeholder="搜索", required=""
+					)                
+          a.weui-icon-clear
+
+        label.weui-search-bar__label
+          i.weui-icon-search                 
+          span 搜索
+         
+      a.weui-search-bar__cancel-btn 取消
+   
+    .weui-cells.searchbar-result
+
+      .weui-cell.weui-cell_access
+        .weui-cell__bd.weui-cell_primary
+          p 实时搜索文本
+          
+      .weui-cell.weui-cell_access
+        .weui-cell__bd.weui-cell_primary
+          p 实时搜索文本
+
+      .weui-cell.weui-cell_access
+        .weui-cell__bd.weui-cell_primary
+          p 实时搜索文本
+         
+      .weui-cell.weui-cell_access
+        .weui-cell__bd.weui-cell_primary
+          p 实时搜索文本

@@ -1,0 +1,75 @@
+.page.js_show
+
+  .page__hd
+    h1.page__title Badge      
+    p.page__desc 徽章
+    
+  .page__bd
+    .weui-cells__title 新消息提示跟摘要信息后，统一在列表右侧
+    .weui-cells
+      .weui-cell.weui-cell_access
+
+        .weui-cell__bd 单行列表             
+        .weui-cell__ft(
+					style="font-size: 0"
+				)
+          span(
+						style="vertical-align:middle; font-size: 17px;"
+					) 详细信息                   
+          span.weui-badge.weui-badge_dot(
+						style="margin-left: 5px;margin-right: 5px;"
+					)
+
+    .weui-cells__title 未读数红点跟在主题信息后，统一在列表左侧
+    .weui-cells
+      .weui-cell
+
+        .weui-cell__hd(
+					style="position: relative;margin-right: 10px;"
+				)
+          img(
+						src="../../../.././node_modules/weui/dist/example/images/pic_160.png", style="width: 50px;display: block"
+					)                 
+          span.weui-badge(
+						style="position: absolute;top: -.4em;right: -.4em;"
+					) 8
+              
+        .weui-cell__bd
+          p 联系人名称                  
+          p(
+						style="font-size: 13px;color: #888888;"
+					) 摘要信息
+
+      .weui-cell.weui-cell_access
+        .weui-cell__bd
+
+          span(
+						style="vertical-align: middle"
+					) 单行列表               
+          span.weui-badge(
+						style="margin-left: 5px;"
+					) 8
+
+        .weui-cell__ft
+         
+      .weui-cell.weui-cell_access
+        .weui-cell__bd
+          span(
+						style="vertical-align: middle"
+					) 单行列表                 
+          span.weui-badge(
+						style="margin-left: 5px;"
+					) 8
+          
+        .weui-cell__ft 详细信息
+
+      .weui-cell.weui-cell_access
+        .weui-cell__bd
+          span(
+						style="vertical-align: middle"
+					) 单行列表                 
+          span.weui-badge(
+						style="margin-left: 5px;"
+					) New  
+
+        .weui-cell__ft

@@ -1,50 +1,37 @@
 .page.js_show
+
   .page__hd
-    h1.page__title Button
-    |         
-    p.page__desc 按钮
-  |     
+    h1.page__title Button       
+    p.page__desc 按钮  
+
   .page__bd.page__bd_spacing
-    a.weui-btn.weui-btn_primary(href="javascript:;") 页面主操作 Normal
-    | 		
-    a.weui-btn.weui-btn_primary.weui-btn_loading(href="javascript:;")
+
+    // Primary
+    a.weui-btn.weui-btn_primary 页面主操作 Normal	
+    a.weui-btn.weui-btn_primary.weui-btn_loading 
       i.weui-loading
       | 页面主操作 Loading
-    |         
-    a.weui-btn.weui-btn_disabled.weui-btn_primary(href="javascript:;") 页面主操作 Disabled
-    |         
-    a.weui-btn.weui-btn_default(href="javascript:;") 页面次要操作 Normal
-    | 		
-    a.weui-btn.weui-btn_default.weui-btn_loading(href="javascript:;")
+    a.weui-btn.weui-btn_disabled.weui-btn_primary 页面主操作 Disabled
+
+    // Normal
+    a.weui-btn.weui-btn_default 页面次要操作 Normal	
+    a.weui-btn.weui-btn_default.weui-btn_loading
       i.weui-loading
       | 页面次操作 Loading
-    |         
-    a.weui-btn.weui-btn_disabled.weui-btn_default(href="javascript:;") 页面次要操作 Disabled
-    |         
-    a.weui-btn.weui-btn_warn(href="javascript:;") 警告类操作 Normal
-    | 		
-    a.weui-btn.weui-btn_warn.weui-btn_loading(href="javascript:;")
+    a.weui-btn.weui-btn_disabled.weui-btn_default 页面次要操作 Disabled 
+
+    // Warn
+    a.weui-btn.weui-btn_warn 警告类操作 Normal	
+    a.weui-btn.weui-btn_warn.weui-btn_loading
       i.weui-loading
       | 警告类操作 Loading
-    |         
-    a.weui-btn.weui-btn_disabled.weui-btn_warn(href="javascript:;") 警告类操作 Disabled
-    |         
-    |         
+    a.weui-btn.weui-btn_disabled.weui-btn_warn 警告类操作 Disabled
+          
     .button-sp-area
-      a.weui-btn.weui-btn_plain-default(href="javascript:;") 按钮
-      |             
-      a.weui-btn.weui-btn_plain-default.weui-btn_plain-disabled(href="javascript:;") 按钮
-      |             
-      a.weui-btn.weui-btn_plain-primary(href="javascript:;") 按钮
-      |             
-      a.weui-btn.weui-btn_plain-primary.weui-btn_plain-disabled(href="javascript:;") 按钮
-      |             
-      a.weui-btn.weui-btn_mini.weui-btn_primary(href="javascript:;") 按钮
-      |             
-      a.weui-btn.weui-btn_mini.weui-btn_default(href="javascript:;") 按钮
-      |             
-      a.weui-btn.weui-btn_mini.weui-btn_warn(href="javascript:;") 按钮
-  |     
-  .page__ft
-    a(href="javascript:home()")
-      img(src="./images/icon_footer_link.png")
+      a.weui-btn.weui-btn_plain-default 按钮           
+      a.weui-btn.weui-btn_plain-default.weui-btn_plain-disabled 按钮         
+      a.weui-btn.weui-btn_plain-primary 按钮         
+      a.weui-btn.weui-btn_plain-primary.weui-btn_plain-disabled 按钮        
+      a.weui-btn.weui-btn_mini.weui-btn_primary 按钮    
+      a.weui-btn.weui-btn_mini.weui-btn_default 按钮        
+      a.weui-btn.weui-btn_mini.weui-btn_warn 按钮

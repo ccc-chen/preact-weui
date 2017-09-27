@@ -1,0 +1,56 @@
+.page.js_show
+
+  .page__hd
+
+    .j_info.page__info(
+			data-for="normal"
+		)
+      h2.page__title WeUI页面层级            
+      p.page__desc 用于规范WeUI页面元素所属层级、层级顺序及组合规范。
+
+    .j_info.page__info(
+			data-for="popout", style="display:none"
+		)
+      h2.page__title Popout        
+      p.page__desc 弹出层，作为内容层和导航层的补充，用于承载弹窗通知、操作菜单、菜单、成功或加载中等状态的Toast，表单报错提示等弹出内容。
+      
+    .j_info.page__info(
+			data-for="mask", style="display:none"
+		)
+      h2.page__title Mask         
+      p.page__desc 蒙层，配合Popout层使用，用于锁定内容层和导航层操作，不单独使用。
+
+    .j_info.page__info(
+			data-for="navigation", style="display:none"
+		)
+      h2.page__title Navigation        
+      p.page__desc 导航层，位于内容层之上，在用户滑动内容层时可保持位置不动，通常用于承载导航栏等需要固定在页面的元素。
+      
+    .j_info.page__info(
+			data-for="content", style="display:none"
+		)
+      h2.page__title Content        
+      p.page__desc 内容层，承载页面主要内容。
+
+  .page__bd
+    .layers.j_layers
+      .j_pic.j_layer.layers__layer.layers__layer_popout(
+				data-name="popout"
+				)
+        span Popout 
+
+      .j_pic.j_layer.layers__layer.layers__layer_mask(
+				data-name="mask"
+			)
+        span Mask
+         
+      .j_pic.j_layer.layers__layer.layers__layer_navigation(
+				data-name="navigation"
+			)
+        span Navigation
+         
+      .j_pic.j_layer.layers__layer.layers__layer_content(
+				data-name="content"
+			)
+        span Content
+
