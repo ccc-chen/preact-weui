@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    include ../common/style_link
+  body
+    .page.home.js_show
+
+      include ../common/title
+
+      .page__bd
+        .weui-cells.weui-cells_checkbox
+
+          .weui-cell.weui-cell_select.weui-cell_select-before
+
+            .weui-cell__bd
+              include ../common/input_todo
+
+            .weui-cell__hd.weui-cell-down
+              select.weui-select
+                option(value="1") All
+                option(value="2") Active
+                option(value="3") Completed
+
+          include ../common/todos_check/index

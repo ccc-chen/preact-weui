@@ -1,0 +1,57 @@
+div.page__bd
+	.weui-cells.weui-cells_checkbox
+
+		.weui-cell.weui-cell_select.weui-cell_select-before
+			.weui-cell__bd
+				input.weui-input(
+					type="text"
+					placeholder="What needs to be done?"
+				)
+
+			.weui-cell__hd.weui-cell-down
+				select.weui-select
+
+		label.weui-cell.weui-check__label
+			.weui-cell__hd
+				input.weui-check(
+					type="checkbox"
+					name="checkbox1"
+					checked="checked"
+				)                   
+				i.weui-icon-checked.weui-cell-success.weui-cell-mark
+						
+			.weui-cell__bd
+				p.weui-cell-p 完成
+
+		label.weui-cell.weui-check__label
+			.weui-cell__hd
+				input.weui-check(
+					type="checkbox"
+					name="checkbox1"
+					checked="checked"
+				)                   
+				i.weui-icon-checked.weui-icon-checked.weui-cell-warning.weui-cell-cross
+						
+			.weui-cell__bd
+				p.weui-cell-p1 删除
+
+		label.weui-cell.weui-check__label
+			.weui-cell__hd
+				input.weui-check(type="checkbox", name="checkbox1")
+				i.weui-icon-checked
+						
+			.weui-cell__bd
+				p 1
+
+		.weui-actionsheet.weui-actionsheet_toggle
+			.weui-actionsheet__title
+				p.weui-actionsheet__title-text 这是一个标题，可以为一行或者两行。
+
+			.weui-actionsheet__menu
+				.weui-actionsheet__cell All
+				.weui-actionsheet__cell Active
+				.weui-actionsheet__cell Completed
+
+			.weui-actionsheet__action
+				.weui-actionsheet__cell 取消
+
