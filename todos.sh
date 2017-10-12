@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 mkdir -p ./dist/todos
-lessc ./src/todos/todos.less > ./dist/todos/todos1.css
+# lessc ./src/todos/todos.less > ./dist/todos/todos1.css
 
 # mkdir -p ./dist/todos/00
 

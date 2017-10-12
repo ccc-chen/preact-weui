@@ -7,14 +7,14 @@ html, body
 
 
 body
-  font-family -apple-system-font, "Helvetica Neue", Helvetica, sans-serif
+  font-family -apple-system-font, Helvetica Neue, Helvetica, sans-serif
 
 
 ul
   list-style none
 
 
-body, .page 
+.page ,body
   background-color #F8F8F8
 
 /* lib */
@@ -110,6 +110,7 @@ body, .page
                 .page__category-content
                     opacity 1
                     transform translateY(0)
+										
                 
             
             &:first-child
@@ -130,6 +131,7 @@ body, .page
         padding $pageHomePadding
         align-items center
         transition .3s
+
         //&:active{
         //    background-color: #ECECEC;
         //}
