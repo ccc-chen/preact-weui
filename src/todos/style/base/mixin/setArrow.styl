@@ -1,34 +1,34 @@
 _setArrow($arrowsize, $borderColor, $borderWidth)
-  display: inline-block
-  height: $arrowsize
-  width: $arrowsize
-  border-width: $borderWidth $borderWidth 0 0
-  border-color: $borderColor
-  border-style: solid
+  display inline-block
+  height $arrowsize
+  width $arrowsize
+  border-width $borderWidth $borderWidth 0 0
+  border-color $borderColor
+  border-style solid
 
 setArrow($direction, $arrowsize, $borderColor, $borderWidth)
   
   if ($direction is top)
     _setArrow($arrowsize, $borderColor, $borderWidth)
-    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0) // rotate(-45deg)
+    transform matrix(0.71, -0.71, 0.71, 0.71, 0, 0) // rotate(-45deg)
 
   if ($direction is right)
     _setArrow($arrowsize, $borderColor, $borderWidth)
-    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0) // rotate(45deg)
+    transform matrix(0.71, 0.71, -0.71, 0.71, 0, 0) // rotate(45deg)
 
-    position: relative
+    position relative
     top: -2px
   
   if ($direction is down)
     _setArrow($arrowsize, $borderColor, $borderWidth)
-    transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0) // rotate(135deg)
+    transform matrix(-0.71, 0.71, -0.71, -0.71, 0, 0) // rotate(135deg)
 
-    position: relative
-    top: -3px
+    position relative
+    top -3px
 
   if ($direction is left)
     _setArrow($arrowsize, $borderColor, $borderWidth)
-    transform: matrix(-0.71, -0.71, 0.71, -0.71, 0, 0) // rotate(-135deg)
+    transform matrix(-0.71, -0.71, 0.71, -0.71, 0, 0) // rotate(-135deg)
 
-    position: relative
-    top: -2px
+    position relative
+    top -2px
