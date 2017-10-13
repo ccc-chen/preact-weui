@@ -12,4 +12,4 @@ pug -P -o ./dist/todos ./src/todos/index.pug
 
 stylus ./src/todos/todos.styl -o ./dist/todos/todos.css
 
-stylus ./src/weui/style/index.styl -o ./dist/weui/style/index.css
+stylus ./src/weui/index.styl -o ./dist/weui/style/index.css
