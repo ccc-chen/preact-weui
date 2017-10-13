@@ -1,206 +1,202 @@
 .page.js_show
-
   .page__hd
-
-    h1.page__title Input       
+    h1.page__title Input
+            
     p.page__desc 表单输入
- 
-  .page__bd
-
-    //cell
-    .weui-cells__title 单选列表项      
-    .weui-cells.weui-cells_radio
-
-      //cell standard 2
-      label.weui-cell.weui-check__label
-        .weui-cell__bd
-          p cell standard
- 
-        .weui-cell__ft
-          span.weui-icon-checked
       
-      //cell standard 2
+  .page__bd
+    .weui-cells__title 单选列表项
+            
+    .weui-cells.weui-cells_radio
       label.weui-cell.weui-check__label
         .weui-cell__bd
           p cell standard
-
+                        
         .weui-cell__ft
-          span.weui-icon-checked   
-
+          input#x11.weui-check(type="radio", name="radio1")
+                             
+          span.weui-icon-checked
+                 
+      label.weui-cell.weui-check__label
+        .weui-cell__bd
+          p cell standard
+                       
+        .weui-cell__ft
+          input#x12.weui-check(type="radio", name="radio1", checked="checked")
+                             
+          span.weui-icon-checked
+               
       a.weui-cell.weui-cell_link
         .weui-cell__bd 添加更多
-
-    //check
-    .weui-cells__title 复选列表项       
+         
+    .weui-cells__title 复选列表项
+          
     .weui-cells.weui-cells_checkbox
-
-      //check 1
       label.weui-cell.weui-check__label
         .weui-cell__hd
-          input.weui-check(type="checkbox", name="checkbox1", checked="checked")                   
+          input#s11.weui-check(type="checkbox", name="checkbox1", checked="checked")
+                            
           i.weui-icon-checked
-             
+                     
         .weui-cell__bd
           p standard is dealt for u.
-
-      //check 2
+              
       label.weui-cell.weui-check__label
         .weui-cell__hd
-          input.weui-check(type="checkbox", name="checkbox1")
+          input#s12.weui-check(type="checkbox", name="checkbox1")
+                           
           i.weui-icon-checked
-              
+                    
         .weui-cell__bd
           p standard is dealicient for u.
-          
+                
       a.weui-cell.weui-cell_link
         .weui-cell__bd 添加更多
-
-    //form
-    .weui-cells__title 表单  
+       
+    .weui-cells__title 表单
+     
     .weui-cells.weui-cells_form
-
-      //qq
       .weui-cell
         .weui-cell__hd
           label.weui-label qq
-             
+           
         .weui-cell__bd
-          input.weui-input(type="number",  placeholder="请输入qq号")
-
-      //iphone       
+          input.weui-input(type="number", pattern="[0-9]*", placeholder="请输入qq号")
+        
       .weui-cell.weui-cell_vcode
         .weui-cell__hd
           label.weui-label 手机号
-            
+                      
         .weui-cell__bd
           input.weui-input(type="tel", placeholder="请输入手机号")
-             
+                  
         .weui-cell__ft
           button.weui-vcode-btn 获取验证码
-
-      //date   
+            
       .weui-cell
         .weui-cell__hd
           label.weui-label 日期
-            
+                 
         .weui-cell__bd
           input.weui-input(type="date", value="")
-       
-      //time  
+            
       .weui-cell
         .weui-cell__hd
           label.weui-label 时间
-          
+                 
         .weui-cell__bd
           input.weui-input(type="datetime-local", value="", placeholder="")
-
-      //vcode
+            
       .weui-cell.weui-cell_vcode
         .weui-cell__hd
           label.weui-label 验证码
-            
+                   
         .weui-cell__bd
           input.weui-input(type="number", placeholder="请输入验证码")
-             
+                    
         .weui-cell__ft
-          img.weui-vcode-img(src="./images/vcode.jpg")
-
-    //ft 
-    .weui-cells__tips 底部说明文字底部说明文字      
-    .weui-cells__title 表单报错   
+          img.weui-vcode-img(src="../../../../../node_modules/weui/src/example/images/vcode.jpg")
+         
+    .weui-cells__tips 底部说明文字底部说明文字
+        
+    .weui-cells__title 表单报错
+       
     .weui-cells.weui-cells_form
-
-      // card number
       .weui-cell.weui-cell_warn
         .weui-cell__hd
-          label.weui-label 卡号
-              
+          label.weui-label(for="") 卡号
+                    
         .weui-cell__bd
-          input.weui-input(type="number", value="weui input error", placeholder="请输入卡号")
-               
+          input.weui-input(type="number", pattern="[0-9]*", value="weui input error", placeholder="请输入卡号")
+                   
         .weui-cell__ft
           i.weui-icon-warn
-
-    // switch       
-    .weui-cells__title 开关       
+       
+    .weui-cells__title 开关
+       
     .weui-cells.weui-cells_form
-
       .weui-cell.weui-cell_switch
-        .weui-cell__bd 标题文字               
+        .weui-cell__bd 标题文字
+                  
         .weui-cell__ft
           input.weui-switch(type="checkbox")
-         
+             
       .weui-cell.weui-cell_switch
-        .weui-cell__bd 兼容IE Edge的版本              
+        .weui-cell__bd 兼容IE Edge的版本
+                   
         .weui-cell__ft
-          label.weui-switch-cp
-            input#switchCP.weui-switch-cp__input(type="checkbox", checked="checked")          
+          label.weui-switch-cp(for="switchCP")
+            input#switchCP.weui-switch-cp__input(type="checkbox", checked="checked")
+                                
             .weui-switch-cp__box
-    
-    // input
-    .weui-cells__title 文本框  
+        
+    .weui-cells__title 文本框
+       
     .weui-cells
       .weui-cell
         .weui-cell__bd
           input.weui-input(type="text", placeholder="请输入文本")
-
-    // inputy 
-    .weui-cells__title 文本域   
+    
+    .weui-cells__title 文本域
+       
     .weui-cells.weui-cells_form
       .weui-cell
         .weui-cell__bd
           textarea.weui-textarea(placeholder="请输入文本", rows="3")
-                   
+                       
           .weui-textarea-counter
             span 0
             | /200
-
-    //select  
-    .weui-cells__title 选择       
+         
+    .weui-cells__title 选择
+     
     .weui-cells
       .weui-cell.weui-cell_select.weui-cell_select-before
-
         .weui-cell__hd
           select.weui-select(name="select2")
-            option(value="1") +86                       
-            option(value="2") +80                      
-            option(value="3") +84                    
+            option(value="1") +86
+                               
+            option(value="2") +80
+                               
+            option(value="3") +84
+                                 
             option(value="4") +87
-             
+                   
         .weui-cell__bd
-          input.weui-input(type="number", placeholder="请输入号码")
-      
-    .weui-cells__title 选择      
+          input.weui-input(type="number", pattern="[0-9]*", placeholder="请输入号码")
+     
+    .weui-cells__title 选择
+        
     .weui-cells
-
       .weui-cell.weui-cell_select
-      
-        //select 1
         .weui-cell__bd
           select.weui-select(name="select1")
-            option(selected="", value="1") 微信号    
-            option(value="2") QQ号       
+            option(selected="", value="1") 微信号
+                               
+            option(value="2") QQ号
+                               
             option(value="3") Email
-        
+              
       .weui-cell.weui-cell_select.weui-cell_select-after
-
         .weui-cell__hd
-          label.weui-label 国家/地区  
-
-        //select 2
+          label.weui-label(for="") 国家/地区
+                
         .weui-cell__bd
           select.weui-select(name="select2")
-            option(value="1") 中国                     
-            option(value="2") 美国                   
+            option(value="1") 中国
+                                
+            option(value="2") 美国
+                                
             option(value="3") 英国
-
-    //agree 
+       
     label.weui-agree(for="weuiAgree")
-    
-      input.weui-agree__checkbox(type="checkbox")         
+      input#weuiAgree.weui-agree__checkbox(type="checkbox")
+            
       span.weui-agree__text
         | 阅读并同意
-        a 《相关条款》
-      
+        a(href="javascript:void(0);") 《相关条款》
+          
     .weui-btn-area
-      a.weui-btn.weui-btn_primary 确定
+      a#showTooltips.weui-btn.weui-btn_primary(href="javascript:") 确定
+  
+  
