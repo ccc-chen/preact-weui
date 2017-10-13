@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 mkdir -p ./dist/weui/style
-lessc ./src/weui/style/index.less > ./dist/weui/style/index.css
 
 # home
 pug -P -o ./dist/weui/widget/home ./src/weui/widget/home/index.pug
@@ -45,3 +44,5 @@ pug -P -o ./dist/weui/widget/layers/layers ./src/weui/widget/layers/layers/index
 
 # main
 pug -P -o ./dist/weui ./src/weui/index.pug
+
+

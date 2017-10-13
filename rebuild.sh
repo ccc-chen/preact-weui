@@ -2,3 +2,4 @@
 
 ./clean.sh
 ./weui.sh
+./todos.sh
