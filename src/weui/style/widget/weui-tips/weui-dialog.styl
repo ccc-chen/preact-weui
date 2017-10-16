@@ -35,30 +35,32 @@
 
 
 .weui-dialog__ft
-  position: relative
-  line-height: 48px
-  font-size: 18px
-  display: flex
+  position relative
+  line-height 48px
+  font-size 18px
+  display flex
   &:after
+    content ""
     setTopLine($weuiDialogLineColor)
 
 
 .weui-dialog__btn
-  display: block
-  flex: 1
-  color: $weuiDialogLinkColor
+  display block
+  flex 1
+  color $weuiDialogLinkColor
   text-decoration: none
   setTapColor()
   &:active
-    background-color: $weuiDialogLinkActiveBc
+    background-color $weuiDialogLinkActiveBc
 
   position: relative
   &:after
+    content ""
     setLeftLine($weuiDialogLineColor)
 
-    &:first-child
-      &:after
-        display: none
+  &:first-child
+    &:after
+      display: none
 
 
 
@@ -69,58 +71,58 @@
   color: #0BB20C
 
 .weui-skin_android
-    .weui-dialog
-      text-align: left
-      box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .1)
+  .weui-dialog
+    text-align: left
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .1)
 
-    .weui-dialog__title
-      font-size: 21px
+  .weui-dialog__title
+    font-size: 21px
 
-    .weui-dialog__hd
-      text-align: left
+  .weui-dialog__hd
+    text-align: left
 
-    .weui-dialog__bd
-        color:$weuiTextColorGray
-        padding:.25em $weuiDialogGapWidth 2em
-        font-size: 17px
-        text-align: left
-        &:first-child
-          padding:1.6em $weuiDialogGapWidth 2em
-          color:#353535
-
-
-    .weui-dialog__ft
-      display: block
-      text-align: right
-      line-height: 42px
-      font-size: 16px
-      padding:0 $weuiDialogGapWidth .7em
-      &:after
-        display: none
+  .weui-dialog__bd
+    color:$weuiTextColorGray
+    padding:.25em $weuiDialogGapWidth 2em
+    font-size: 17px
+    text-align: left
+    &:first-child
+      padding:1.6em $weuiDialogGapWidth 2em
+      color:#353535
 
 
-    .weui-dialog__btn
-      display: inline-block
-      vertical-align: top
-      padding:0 .8em
-      &:after
-        display: none
-
-      &:active
-        background-color: rgba(0, 0, 0, .06)
-
-      &:visited
-        background-color: rgba(0, 0, 0, .06)
-
-      &:last-child
-        margin-right: -.8em
+  .weui-dialog__ft
+    display: block
+    text-align: right
+    line-height: 42px
+    font-size: 16px
+    padding:0 $weuiDialogGapWidth .7em
+    &:after
+      display: none
 
 
-    .weui-dialog__btn_default
-      color: #808080
+  .weui-dialog__btn
+    display: inline-block
+    vertical-align: top
+    padding:0 .8em
+    &:after
+      display: none
+
+    &:active
+      background-color: rgba(0, 0, 0, .06)
+
+    &:visited
+      background-color: rgba(0, 0, 0, .06)
+
+    &:last-child
+      margin-right: -.8em
 
 
-  @media screen and (min-width: 1024px)
+  .weui-dialog__btn_default
+    color: #808080
+
+
+@media screen and (min-width: 1024px)
   .weui-dialog
     width: 35%
 
