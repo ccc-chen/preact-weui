@@ -1,17 +1,20 @@
 doctype html
 html
   head
-  meta(charset="UFT-8")
-  link(
-    rel="stylesheet"
-    href="style/index.css"
-  )
+    meta(charset="UTF-8")
+    meta(
+      name="viewport" content="with=device-width,initial-scale=1,user-scalable=0"
+    )
+    link(
+      rel="stylesheet"
+      href="style/index.css"
+    )
   body
     .page.home.js_show
       .page__hd
         h1.page__title
           img(
-            src="../../node_modules/weui/src/example/images/logo.png"
+            src="./images/logo.png"
             height="21px"
           )    
         p.page__desc WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。
@@ -21,35 +24,35 @@ html
           li.js_show
             .weui-flex.js_category
               p.weui-flex__item 表单
-              img(src="../../node_modules/weui/src/example/images/icon_nav_form.png", alt="")
+              img(src="./images/icon_nav_form.png", alt="")
 
             .page__category.js_categoryInner
               .weui-cells.page__category-content
-                a.weui-cell.weui-cell_access.js_item(data-id="button", href="../../dist/weui/widget/form/button/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="button", href="./widget/form/button/index.html")
                   .weui-cell__bd
                     p Button
                                            
                   .weui-cell__ft
                                     
-                a.weui-cell.weui-cell_access.js_item(data-id="input", href="../../dist/weui/widget/form/input/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="input", href="./widget/form/input/index.html")
                   .weui-cell__bd
                     p Input
                                          
                   .weui-cell__ft
                                    
-                a.weui-cell.weui-cell_access.js_item(data-id="list", href="../../dist/weui/widget/form/list/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="list", href="./widget/form/list/index.html")
                   .weui-cell__bd
                     p List
                                           
                   .weui-cell__ft
                                     
-                a.weui-cell.weui-cell_access.js_item(data-id="slider", href="../../dist/weui/widget/form/slider/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="slider", href="./widget/form/slider/index.html")
                   .weui-cell__bd
                     p Slider
                                          
                   .weui-cell__ft
                                    
-                a.weui-cell.weui-cell_access.js_item(data-id="uploader", href="../../dist/weui/widget/form/uploader/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="uploader", href="./widget/form/uploader/index.html")
                   .weui-cell__bd
                     p Uploader
                                           
@@ -59,71 +62,71 @@ html
             .weui-flex.js_category
               p.weui-flex__item 基础组件
                              
-              img(src="../../node_modules/weui/src/example/images/icon_nav_layout.png", alt="")
+              img(src="./images/icon_nav_layout.png", alt="")
                       
             .page__category.js_categoryInner
               .weui-cells.page__category-content
-                a.weui-cell.weui-cell_access.js_item(data-id="article", href="../../dist/weui/widget/basic_components/article/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="article", href="./widget/basic_components/article/index.html")
                   .weui-cell__bd
                     p Article
                                           
                   .weui-cell__ft
                                     
-                a.weui-cell.weui-cell_access.js_item(data-id="badge", href="../../dist/weui/widget/basic_components/badge/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="badge", href="./widget/basic_components/badge/index.html")
                   .weui-cell__bd
                     p Badge
                                           
                   .weui-cell__ft
                                     
-                a.weui-cell.weui-cell_access.js_item(data-id="flex", href="../../dist/weui/widget/basic_components/flex/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="flex", href="./widget/basic_components/flex/index.html")
                   .weui-cell__bd
                     p Flex
                                         
                   .weui-cell__ft
                                     
-                a.weui-cell.weui-cell_access.js_item(data-id="footer", href="../../dist/weui/widget/basic_components/footer/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="footer", href="./widget/basic_components/footer/index.html")
                   .weui-cell__bd
                     p Footer
                                          
                   .weui-cell__ft
                                    
-                a.weui-cell.weui-cell_access.js_item(data-id="gallery", href="../../dist/weui/widget/basic_components/gallery/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="gallery", href="./widget/basic_components/gallery/index.html")
                   .weui-cell__bd
                     p Gallery
                                          
                   .weui-cell__ft
                                    
-                a.weui-cell.weui-cell_access.js_item(data-id="grid", href="../../dist/weui/widget/basic_components/grid/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="grid", href="./widget/basic_components/grid/index.html")
                   .weui-cell__bd
                     p Grid
                                          
                   .weui-cell__ft
                                     
-                a.weui-cell.weui-cell_access.js_item(data-id="icons", href="../../dist/weui/widget/basic_components/lcons/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="icons", href="./widget/basic_components/lcons/index.html")
                   .weui-cell__bd
                     p Icons
                                          
                   .weui-cell__ft
                                   
-                a.weui-cell.weui-cell_access.js_item(data-id="loadmore", href="../../dist/weui/widget/basic_components/loadmore/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="loadmore", href="./widget/basic_components/loadmore/index.html")
                   .weui-cell__bd
                     p Loadmore
                                          
                   .weui-cell__ft
                                    
-                a.weui-cell.weui-cell_access.js_item(data-id="panel", href="../../dist/weui/widget/basic_components/panel/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="panel", href="./widget/basic_components/panel/index.html")
                   .weui-cell__bd
                     p Panel
                                           
                   .weui-cell__ft
                                    
-                a.weui-cell.weui-cell_access.js_item(data-id="preview", href="../../dist/weui/widget/basic_components/preview/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="preview", href="./widget/basic_components/preview/index.html")
                   .weui-cell__bd
                     p Preview
                                           
                   .weui-cell__ft
                                     
-                a.weui-cell.weui-cell_access.js_item(data-id="progress", href="../../dist/weui/widget/basic_components/progress/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="progress", href="./widget/basic_components/progress/index.html")
                   .weui-cell__bd
                     p Progress
                                           
@@ -133,35 +136,35 @@ html
             .weui-flex.js_category
               p.weui-flex__item 操作反馈
                               
-              img(src="../../node_modules/weui/src/example/images/icon_nav_feedback.png", alt="")
+              img(src="./images/icon_nav_feedback.png", alt="")
                       
             .page__category.js_categoryInner
               .weui-cells.page__category-content
-                a.weui-cell.weui-cell_access.js_item(data-id="actionsheet", href="../../dist/weui/widget/operation_feedback/actionsheet/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="actionsheet", href="./widget/operation_feedback/actionsheet/index.html")
                   .weui-cell__bd
                     p Actionsheet
                                            
                   .weui-cell__ft
                                     
-                a.weui-cell.weui-cell_access.js_item(data-id="dialog", href="../../dist/weui/widget/operation_feedback/dialog/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="dialog", href="./widget/operation_feedback/dialog/index.html")
                   .weui-cell__bd
                     p Dialog
                                           
                   .weui-cell__ft
                                     
-                a.weui-cell.weui-cell_access.js_item(data-id="msg", href="../../dist/weui/widget/operation_feedback/msg/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="msg", href="./widget/operation_feedback/msg/index.html")
                   .weui-cell__bd
                     p Msg
                                           
                   .weui-cell__ft
                                     
-                a.weui-cell.weui-cell_access.js_item(data-id="picker", href="../../dist/weui/widget/operation_feedback/picker/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="picker", href="./widget/operation_feedback/picker/index.html")
                   .weui-cell__bd
                     p Picker
                                          
                   .weui-cell__ft
                                   
-                a.weui-cell.weui-cell_access.js_item(data-id="toast", href="../../dist/weui/widget/operation_feedback/toast/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="toast", href="./widget/operation_feedback/toast/index.html")
                   .weui-cell__bd
                     p Toast
                                         
@@ -171,17 +174,17 @@ html
             .weui-flex.js_category
               p.weui-flex__item 导航相关
                              
-              img(src="../../node_modules/weui/src/example/images/icon_nav_nav.png", alt="")
+              img(src="./images/icon_nav_nav.png", alt="")
                        
             .page__category.js_categoryInner
               .weui-cells.page__category-content
-                a.weui-cell.weui-cell_access.js_item(data-id="navbar", href="../../dist/weui/widget/nav/navbar/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="navbar", href="./widget/nav/navbar/index.html")
                   .weui-cell__bd
                     p Navbar
                                           
                   .weui-cell__ft
                                   
-                a.weui-cell.weui-cell_access.js_item(data-id="tabbar", href="../../dist/weui/widget/nav/tabbar/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="tabbar", href="./widget/nav/tabbar/index.html")
                   .weui-cell__bd
                     p Tabbar
                                           
@@ -191,11 +194,11 @@ html
             .weui-flex.js_category
               p.weui-flex__item 搜索相关
                              
-              img(src="../../node_modules/weui/src/example/images/icon_nav_search.png", alt="")
+              img(src="./images/icon_nav_search.png", alt="")
                        
             .page__category.js_categoryInner
               .weui-cells.page__category-content
-                a.weui-cell.weui-cell_access.js_item(data-id="searchbar", href="../../dist/weui/widget/search/searchbar/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="searchbar", href="./widget/search/searchbar/index.html")
                   .weui-cell__bd
                     p Search Bar
                                          
@@ -205,11 +208,11 @@ html
             .weui-flex.js_item(data-id="layers")
               p.weui-flex__item 层级规范
                               
-              img(src="../../node_modules/weui/src/example/images/icon_nav_z-index.png", alt="")
+              img(src="./images/icon_nav_z-index.png", alt="")
 
             .page__category.js_categoryInner
               .weui-cells.page__category-content
-                a.weui-cell.weui-cell_access.js_item(data-id="searchbar", href="../../dist/weui/widget/layers/layers/index.html")
+                a.weui-cell.weui-cell_access.js_item(data-id="searchbar", href="./widget/layers/layers/index.html")
                   .weui-cell__bd
                     p layers
 

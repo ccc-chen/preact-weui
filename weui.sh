@@ -45,6 +45,8 @@ pug -P -o ./dist/weui/widget/layers/layers ./src/weui/widget/layers/layers/index
 # main
 pug -P -o ./dist/weui ./src/weui/index.pug
 
+#img
+cp -r node_modules/weui/src/example/images dist/weui
 
 
 
